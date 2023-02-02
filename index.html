@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my'ME</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section id="main" class="main">
+        <!-- Buttons menu -->
+        <div class="buttons__menu active">
+            <button class="button__big btn__add">+</button>
+        </div>
+        <!-- Panel Add -->
+        <div class="panel panel__add">
+            <div class="panel__content panel__add--content">
+                <input class="panel__input panel__input--add" placeholder="Название блока" value="">
+                <textarea name="" id="" cols="30" rows="4" class="panel__textarea panel__textarea--add" placeholder="Текст внутри блока"></textarea>
+                <div class="panel__img--content panel__img--content-add none">
+                    <input class="panel__img--link panel__img--link-add first" placeholder="Ссылка на изображение" value="">
+                    <button class="button__img button__img--remove">x</button>
+                </div>
+                <button class="button__big panel__button--img panel__button--img-add">+</button>
+            </div>
+            <div class="panel__buttons panel__buttons--add">
+                <button class="button__big button__add--ok">+</button>
+                <button class="button__big button__add--no">x</button>
+            </div>
+        </div>
+        <!-- Main content -->
+        <div class="main__content"></div>
+        <!-- Panel Open -->
+        <div class="panel__open none">
+            <div class="panel__open--wrapper">
+                <div class="panel__open--content">
+                    <div class="panel__open--textgroup">
+                        <h2 class="panel__open--title"></h2>
+                        <p class="panel__open--text"></p>    
+                    </div>
+                    <div class="panel__open--img-content">
+                        <button class="arrow arrow__left none">
+                            <svg class="arrow__img arrow__left" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512">
+                                <path d="M17.17,24a1,1,0,0,1-.71-.29L8.29,15.54a5,5,0,0,1,0-7.08L16.46.29a1,1,0,1,1,1.42,1.42L9.71,9.88a3,3,0,0,0,0,4.24l8.17,8.17a1,1,0,0,1,0,1.42A1,1,0,0,1,17.17,24Z"/>
+                            </svg>
+                        </button>
+                        <button class="arrow arrow__right">
+                            <svg class="arrow__img arrow__right" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512">
+                                <path d="M7,24a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l8.17-8.17a3,3,0,0,0,0-4.24L6.29,1.71A1,1,0,0,1,7.71.29l8.17,8.17a5,5,0,0,1,0,7.08L7.71,23.71A1,1,0,0,1,7,24Z"/>
+                            </svg>
+                        </button>
+                        <div class="dots"></div>
+                    </div>
+                    <button class="btn__open--close">x</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ghost -->
+    <section class="ghost">
+        <!-- Block -->
+        <div class="block">
+            <h2 class="block__title"></h2>
+            <p class="block__text"></p>
+            <button class="btn__open">[]</button>
+            <button class="btn__edit">...</button>
+            <button class="btn__remove">x</button>
+            <div class="block__img--content"></div>
+            <div class="comment__block none">
+                <div class="newcomment__block--item comment__wrapper">
+                    <textarea cols="30" rows="1" class="newcomment__textarea comment__wrapper--textarea"  placeholder="Напишите комментарий"></textarea>
+                    <button class="newcomment__button--send comment__wrapper--send">Отправить</button>
+                    <button class="newcomment__button--delete comment__wrapper--delete">Очистить</button>
+                </div>
+            </div>
+            <div class="comment__content--wrapper">
+                <button class="like">0 лайков</button>
+                <button class="comment__content">Комментировать</button>
+            </div>
+            <div class="block__information">
+                <input type="text" class="count__like" value="0">
+            </div>
+        </div>
+        <!-- Block img -->
+        <img class="block__img" src="" alt=""></img>
+        <!-- PanelOpen img -->
+        <img src="" alt="" class="panel__open--img">
+        <!-- PanelOpen dotEl -->
+        <div class="dot__el"></div>
+        <!-- Comment block item -->
+        <div class="comment__block--item">
+            <button class="comment__account">
+                <div class="comment__account--avatar"></div>
+                <p class="comment__account--name"></p>
+            </button>
+            <p class="comment__block--text"></p>
+            <div class="comment__content--wrapper">
+                <button class="comment__like">0 лайков</button>
+                <button class="comment__answer">Ответить</button>
+            </div>
+            <button class="comment__block--remove">x</button>
+            <div class="block__information">
+                <input type="text" class="comment__count--like" value="0">
+            </div>
+            <div class="comment__block--item-answer">
+
+            </div>
+        </div>
+        <!-- Panel Edit -->
+        <div class="panel panel__edit active">
+            <div class="panel__content panel__edit--content">
+                <input class="panel__input panel__input--edit" placeholder="Название блока" value="">
+                <textarea name="" id="" cols="30" rows="4" class="panel__textarea panel__textarea--edit" placeholder="Текст внутри блока"></textarea>
+                <div class="panel__img--content panel__img--content-edit none">
+                    <input class="panel__img--link panel__img--link-edit first" placeholder="Ссылка на изображение" value="">
+                    <button class="button__img button__img--remove">x</button>
+                </div>
+                <button class="button__big panel__button--img panel__button--img-edit">+</button>
+            </div>
+            <div class="panel__buttons panel__buttons--edit">
+                <button class="button__big button__edit--ok">ок</button>
+                <button class="button__big button__edit--no">x</button>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
